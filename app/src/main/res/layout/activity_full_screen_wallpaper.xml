@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,4 +14,27 @@
 
     </com.github.chrisbanes.photoview.PhotoView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="SET WALLPAPER"
+        android:id="@+id/btn_setwallpaper"
+        android:layout_alignParentBottom="true"
+        android:background="@color/teal_200"
+        android:onClick="setWallpaperEvent"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="DOWNLOAD WALLPAPER"
+        android:id="@+id/btn_downloadwallpaper"
+        android:background="@color/teal_200"
+        android:onClick="downloadWallpaperEvent"
+        android:layout_above="@+id/btn_setwallpaper"
+        android:layout_marginBottom="10dp" />
+
+</RelativeLayout>
